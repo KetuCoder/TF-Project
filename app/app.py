@@ -2,13 +2,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return "Hello from private EC2!"
+    return "Hello from Private EC2 behind ALB!"
 
-@app.route('/health')
+@app.route("/health")
 def health():
     return "ok"
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)

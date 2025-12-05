@@ -1,5 +1,4 @@
 #!/bin/bash
-ALB=$(terraform -chdir=terraform output -raw alb_dns)
-echo "Testing ALB: http://$ALB/"
-curl http://$ALB/
-curl http://$ALB/health
+ALB_URL=$(terraform -chdir=terraform output -raw alb_url)
+curl http://$ALB_URL
+curl http://$ALB_URL/health

@@ -1,10 +1,23 @@
-# One-Click Python REST API on AWS
+# One-Click DevOps Deployment Assignment
 
-## Deploy
+## ✅ Prerequisites
+- AWS CLI configured
+- Terraform installed
+- Bash shell
+
+---
+
+## ✅ Deploy (One Command)
+```bash
 ./scripts/deploy.sh
 
-## Test
+✅ Test API
 ./scripts/test.sh
 
-## Teardown
+or open:
+
+http://<ALB_DNS_NAME>/
+http://<ALB_DNS_NAME>/health
+
+✅ Destroy Everything
 ./scripts/destroy.sh

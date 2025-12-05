@@ -1,3 +1,3 @@
-output "alb_dns" {
-  value = aws_lb.app_alb.dns_name
+output "alb_url" {
+  value = aws_lb.alb.dns_name
 }
